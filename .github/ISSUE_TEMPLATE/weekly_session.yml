@@ -1,6 +1,6 @@
-name: 📝 Weekly Session Submission
-description: Submit your weekly session report here
-title: "[Week X] Session Submission"
+name: 📝 AI / ML Mentorship Program 2025
+description: Submit your weekly session report
+title: "[Week X] AI / ML Session Submission"
 labels: [weekly-session]
 body:
   - type: input
@@ -17,7 +17,7 @@ body:
     attributes:
       label: Mentored By
       description: Name of the mentor for this session
-      placeholder: e.g., John Doe
+      placeholder: e.g., Dr. Jane Doe
     validations:
       required: true
 
@@ -25,16 +25,28 @@ body:
     id: repo-link
     attributes:
       label: GitHub Repository Link
-      description: Link to the project repository (if any)
+      description: Link to your project or work repository
       placeholder: https://github.com/yourusername/yourrepo
     validations:
       required: true
 
+  - type: input
+    id: zoom-link
+    attributes:
+      label: Zoom Recording Link (Optional)
+      description: If available, add a link to the session recording
+      placeholder: https://zoom.us/...
+
+  - type: textarea
+    id: other-resources
+    attributes:
+      label: Other Resources or Sessions (Optional)
+      description: Include links or details about related content (slides, articles, etc.)
+      placeholder: Add any other sessions or learning resources here
+
   - type: textarea
     id: session-summary
     attributes:
-      label: Session Summary
-      description: Briefly describe what was covered or accomplished this week.
-      placeholder: Topics, tasks completed, challenges, etc.
-    validations:
-      required: false
+      label: Session Summary (Optional)
+      description: Briefly describe what was covered or accomplished
+      placeholder: Topics, tasks completed, challenges, key takeaways
