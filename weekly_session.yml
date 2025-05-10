@@ -1,0 +1,40 @@
+name: 📝 Weekly Session Submission
+description: Submit your weekly session report here
+title: "[Week X] Session Submission"
+labels: [weekly-session]
+body:
+  - type: input
+    id: week-number
+    attributes:
+      label: Week Number
+      description: Which week/session is this for?
+      placeholder: e.g., Week 3
+    validations:
+      required: true
+
+  - type: input
+    id: mentor-name
+    attributes:
+      label: Mentored By
+      description: Name of the mentor for this session
+      placeholder: e.g., John Doe
+    validations:
+      required: true
+
+  - type: input
+    id: repo-link
+    attributes:
+      label: GitHub Repository Link
+      description: Link to the project repository (if any)
+      placeholder: https://github.com/yourusername/yourrepo
+    validations:
+      required: true
+
+  - type: textarea
+    id: session-summary
+    attributes:
+      label: Session Summary
+      description: Briefly describe what was covered or accomplished this week.
+      placeholder: Topics, tasks completed, challenges, etc.
+    validations:
+      required: false
