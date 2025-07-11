@@ -24,7 +24,7 @@ body:
   - type: input
     id: repo-link
     attributes:
-      label: GitHub Repository Link
+      label: GitHub Repository Link / Resource
       description: Link to the project repository (if any)
       placeholder: https://github.com/yourusername/yourrepo
     validations:
